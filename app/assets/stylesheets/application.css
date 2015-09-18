@@ -1,15 +1,54 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+#navmenu{
+  align: center;
+}
+
+#navmenu ul{
+	height:30px;
+    overflow: hidden;
+}
+
+#navmenu li{
+	list-style: none;
+	float: left;
+	position: relative;
+	background:#09F;
+
+}
+
+#navmenu ul li {
+	text-align:center;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	height:30px;
+	width:150px;
+	display:block;
+	color:silver;
+	padding-top:7px;
+}
+
+#navmenu ul ul{
+	position:absolute;
+	visibility: hidden;
+	top:30px;
+}
+
+#navmenu li:hover {
+	background: gray;
+}
+
+body{
+	background-image: url('earphone.jpg');
+}
+
+
+#header{
+
+}
+
+p{
+	color: white;
+}
+.title{
+	color: white;
+}
+

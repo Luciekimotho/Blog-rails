@@ -7,40 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <div id="sidebar">
-    	<div id="logo">
+    <div id="navmenu">
+    	<!-- <div id="logo">
     		<%= link_to root_path do %>
-    		   <%= image_tag "logo.svg"%>
+    		   <%= image_tag "judy.jpg"%>
     		<% end %>
-    	</div>
+    	</div> -->
 
     	<ul>
    	       <li class="category">Website</li>
    	       <li> <%=link_to "Blog", root_path %></li>
    	       <li> About</li>
+           <li> Contact</li>
+           <li> Admin Login</li>
+
         </ul>
-
-        <ul>
-   	       <li a href ="">Facebook</li>
-   	       <li a href ="">Twitter</li>
-   	       <li a href ="">Instagram</li>
-   	       <li a href ="">Pintrest</li>
-        </ul>
-
-        <p class="sign_in">Admin Login</p>
-
     </div>
 
     <div id="main_content">
     	<div id="header">
-    		<p>All posts</p>
+    		<h2 class="title">All posts</h2>
 
-    		<div class="buttons">
-    			<!-- <button class="button"> <%= link_to "New Post", new_post_path %> </button> -->
-    			<%= link_to "New Post", new_post_path %>
-    			<button class="button">Log Out</button>
-    		</div>
-    	</div>
+
 
     	<% flash.each do |name, msg| %>
     	    <%= content_tag(:div, msg, class:"alert") %>
@@ -49,5 +37,16 @@
         <%= yield %>
 
     </div>
+            <br><br><br><br><hr>
+    <div class="buttons">
+          <!-- <button class="button"> <%= link_to "New Post", new_post_path %> </button> -->
+          <%= link_to "New Post", new_post_path %>
+          <button class="button">Log Out</button>
+        </div>
+      </div>
+
+    <!-- <div>
+      <p class="sign_in">Admin Login</p>
+    </div> -->
 </body>
 </html>
